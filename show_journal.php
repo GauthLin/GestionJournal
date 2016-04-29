@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Page d'accueil</title>
 </head>
 <body>
@@ -37,5 +38,8 @@
         echo '<div class="text-right"><a href="add_article.php?file='.$file.'" class="btn btn-success">Ajouter un nouvel article</a></div>';
         ?>
     </div>
+    <footer>
+        Gauthier Linard | Tous droits réservés &copy; 2016
+    </footer>
 </body>
 </html>

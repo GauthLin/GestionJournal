@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Création d'un journal</title>
 </head>
 <body>
@@ -83,5 +84,8 @@
         }
         ?>
     </div>
+    <footer>
+        Gauthier Linard | Tous droits réservés &copy; 2016
+    </footer>
 </body>
 </html>

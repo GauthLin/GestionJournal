@@ -2,12 +2,12 @@
 /**
  * Permet de lire un fichier xml
  *
- * @param $filepath String Nom du fichier a lire
+ * @param $filename String Nom du fichier a lire
  * @return array Retourne un tableau contenant les valeurs du fichier xml lu
  */
-function readXML($filepath) {
+function readXML($filename) {
     $dom = new DOMDocument('1.0', 'UTF-8');
-    $dom->load('xml/'.$filepath);
+    $dom->load('xml/'.$filename);
     $articles = $dom->getElementsByTagName('article');
 
     $data = array();
@@ -57,6 +57,17 @@ function createXML(array $data) {
     }
 
     $dom->save('xml/journal_'. $data['date'] .'.xml');
+}
+
+/**
+ * Supprime le fichier xml
+ *
+ * @param $filename String Le nom du fichier à supprimer
+ */
+function deleteXML($filename) {
+    if (file_exists('xml/'.$filename)) {
+        unlink('xml/'.$filename);
+    }
 }
 
 /**
