@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Page d'accueil</title>
+    <title>Aperçu d'un journal</title>
 </head>
 <body>
     <div class="container">
@@ -35,7 +35,10 @@
             echo '<div class="well">'. $article['contenu'] .'</div>';
         }
 
-        echo '<div class="text-right"><a href="add_article.php?file='.$file.'" class="btn btn-success">Ajouter un nouvel article</a></div>';
+        echo '<div class="text-right">
+                <a href="add_article.php?file='.$file.'" class="btn btn-success">Ajouter un nouvel article</a>
+                <a href="delete_journal.php?file='.$file.'" class="btn btn-danger">Supprimer le journal</a>
+            </div>';
         ?>
     </div>
     <footer>

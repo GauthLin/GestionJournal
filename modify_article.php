@@ -68,7 +68,7 @@
             </div>
 
             <div class="text-right">
-                <a href="modify_article.php?file=<?php echo $file;?>&amp;num=<?php echo $num;?>" class="btn btn-default">Retour au journal</a>
+                <a href="show_journal.php?file=<?php echo $file;?>&amp;num=<?php echo $num;?>" class="btn btn-default">Retour au journal</a>
                 <input type="submit" value="Modifier l'article" class="btn btn-success">
             </div>
         </form>

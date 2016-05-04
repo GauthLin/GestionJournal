@@ -34,8 +34,11 @@
         fwrite($temp,$content);
         fclose($temp);
 
-        exec("fop/fop.bat temp/xml.fo journal.pdf", $output, $returnvar);
-        var_dump($output, $returnvar);
+        $pdfname = trim(basename('xml/'.$file, '.xml') .'.pdf');
+        // Imprime le journal
+        exec("C:/wamp64/www/GestionJournal/fop/fop.bat temp/xml.fo journal/$pdfname 2>&1", $output);
+
+        echo '<div class="alert alert-info">Le journal a bien été imprimé au format pdf. Vous pouvez le trouver dans le dossier <strong>journal/'.$pdfname.'</strong>. <a href="index.php">Cliquez ici</a> pour retourner à la page d\'accueil.</div>';
         ?>
     </div>
 </div>

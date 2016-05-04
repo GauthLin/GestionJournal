@@ -40,7 +40,7 @@
         } else { ?>
             <!-- Affichage du formulaire de création du journal -->
             <div class="alert alert-info">
-                Veuillez indiquer la date du journal. Ensuite, cliquez sur "<strong>Créer le journal</strong>".
+                Veuillez compléter les champs présents ci-dessous. Ensuite, cliquez sur "<strong>Créer le journal</strong>".
             </div>
             <form action="create_journal.php" method="post" class="form-horizontal">
                 <div class="form-group">
