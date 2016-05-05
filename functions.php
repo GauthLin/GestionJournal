@@ -68,6 +68,10 @@ function deleteXML($filename) {
     if (file_exists('xml/'.$filename)) {
         unlink('xml/'.$filename);
     }
+
+    if (file_exists('journal/'. basename($filename, '.xml') .'.pdf')) {
+        unlink('journal/'. basename($filename, '.xml') .'.pdf');
+    }
 }
 
 /**

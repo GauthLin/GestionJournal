@@ -4,7 +4,7 @@
   <xsl:output method="xml" indent="yes"/>
 
   <!-- Permet de ne as afficher toutes les balises -->
-  <xsl:template match="*"></xsl:template>
+  <xsl:template match="*" />
 
   <xsl:template match="/">
     <fo:root>
@@ -47,7 +47,7 @@
 
   <!-- Pour chaque article -->
   <xsl:template match="article">
-    <fo:block>
+    <fo:block margin-top="20pt">
       <!-- Affichage du titre -->
       <fo:inline font-size="large" color="green">
         <xsl:value-of select="titre"/>
@@ -55,7 +55,7 @@
 
       <!-- Affichage des auteurs -->
       <fo:inline font-size="small" color="gray">
-        <xsl:value-of select="auteur"/>
+        Par <xsl:value-of select="auteur"/>
       </fo:inline>
     </fo:block>
 

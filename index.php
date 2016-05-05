@@ -27,8 +27,8 @@
              # Si c'est pas un fichier spécial -> traitement
              if ($file != '.' and $file != '..') {
                  echo '<li class="list-group-item row">
-                    <span class="col-sm-9">Journal du '. convertDate2Title($file) .'</span>
-                    <span class="col-sm-3 text-right">
+                    <span class="col-sm-8">Journal du '. convertDate2Title($file) .'</span>
+                    <span class="col-sm-4 text-right">
                         <a href="show_journal.php?file='.$file.'" class="btn btn-warning btn-xs">Modifier</a>
                         <a href="delete_journal.php?file='.$file.'" class="btn btn-danger btn-xs">Supprimer</a>
                         <a href="print_journal.php?file='.$file.'" class="btn btn-info btn-xs">Imprimer</a>

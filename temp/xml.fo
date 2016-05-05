@@ -17,9 +17,10 @@
         Journal du 2016-04-21</fo:block>
     </fo:static-content>
     <fo:flow flow-name="body">
-      <fo:block>
+      <fo:block margin-top="20pt">
         <fo:inline font-size="large" color="green">Une jeune femme envoie un automobiliste dans un fauteuil roulant pour un selfie</fo:inline>
-        <fo:inline font-size="small" color="gray">Etienne Froment</fo:inline>
+        <fo:inline font-size="small" color="gray">
+        Par Etienne Froment</fo:inline>
       </fo:block>
       <fo:block margin-top="10pt">Christal McGee, une jeune femme de 18 ans, a voulu s’immortaliser au volant du bolide de ses parents en utilisant le filtre de vitesse de Snapchat. La jeune femme, qui roulait à plus de 170 km/h, a causé un violent accident qui a envoyé un automobiliste tout droit dans un fauteuil roulant.</fo:block>
     </fo:flow>

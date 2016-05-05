@@ -24,17 +24,11 @@
             // Récupère les informations du journal
             $data = readXML($file);
 
-            $titres = $_POST['titre'];
-            $auteurs = $_POST['auteur'];
-            $contenus = $_POST['contenu'];
-
-            foreach ($titres as $key => $titre) {
-                $data['articles'][] = [
-                    'titre' => $titre,
-                    'auteur' => $auteurs[$key],
-                    'contenu' => $contenus[$key]
-                ];
-            }
+            $data['articles'][] = [
+                'titre' => $_POST['titre'],
+                'auteur' => $_POST['auteur'],
+                'contenu' => $_POST['contenu']
+            ];
 
             // Supprime le journal
             deleteXML($file);
@@ -49,23 +43,23 @@
             </div>
             <form action="add_article.php?file=<?php echo $file; ?>" method="post" class="form-horizontal">
                 <div class="form-group">
-                    <label for="titre[]" class="col-sm-2 control-label">Titre</label>
+                    <label for="titre" class="col-sm-2 control-label">Titre</label>
                     <div class="col-sm-10">
-                        <input type="text" name="titre[]" id="titre[]" class="form-control">
+                        <input type="text" name="titre" id="titre" class="form-control">
                     </div>
                 </div>
 
                 <div class="form-group">
-                    <label for="auteur[]" class="col-sm-2 control-label">Auteur</label>
+                    <label for="auteur" class="col-sm-2 control-label">Auteur</label>
                     <div class="col-sm-10">
-                        <input type="text" name="auteur[]" id="auteur[]" class="form-control">
+                        <input type="text" name="auteur" id="auteur" class="form-control">
                     </div>
                 </div>
 
                 <div class="form-group">
-                    <label for="contenu[]" class="col-sm-2 control-label">Contenu</label>
+                    <label for="contenu" class="col-sm-2 control-label">Contenu</label>
                     <div class="col-sm-10">
-                        <textarea rows="5" name="contenu[]" id="contenu[]" class="form-control"></textarea>
+                        <textarea rows="5" name="contenu" id="contenu" class="form-control"></textarea>
                     </div>
                 </div>
 
