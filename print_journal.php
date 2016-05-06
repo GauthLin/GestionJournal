@@ -30,7 +30,7 @@
                 $content = $xsl->transformToXML($xmlfile);
 
                 // Création d'un fichier temporaire dans lequel nous allons stocker le xml générer par XSLTProcessor
-                $temp = fopen('temp/xml.fo', 'w');
+                $temp = fopen('temp/xml.xml', 'w');
                 fwrite($temp, $content);
                 fclose($temp);
 
@@ -38,7 +38,7 @@
                 $pdfname = trim(basename('xml/' . $file, '.xml') . '.pdf');
 
                 // Imprime le journal
-                exec("C:/wamp/www/GestionJournal/fop/fop.bat temp/xml.fo journal/$pdfname 2>&1", $output);
+                exec("C:/wamp64/www/GestionJournal/fop/fop.bat temp/xml.xml journal/$pdfname 2>&1", $output);
 
                 // Affiche un message de succès
                 echo '<div class="alert alert-info">Le journal a bien été imprimé au format pdf. Vous pouvez le trouver dans le dossier <strong>journal/' . $pdfname . '</strong>. <a href="index.php">Cliquez ici</a> pour retourner à la page d\'accueil.</div>';

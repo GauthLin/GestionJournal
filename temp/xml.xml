@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format">
+    <fo:layout-master-set>
+        <fo:simple-page-master master-name="pages" page-width="210mm" page-height="297mm" margin="10mm">
+            <fo:region-body region-name="body" margin="10mm 15mm"/>
+            <fo:region-before region-name="header" extent="10mm"/>
+            <fo:region-after region-name="footer" extent="10mm"/>
+        </fo:simple-page-master>
+    </fo:layout-master-set>
+    <fo:page-sequence master-reference="pages">
+        <fo:static-content flow-name="footer">
+            <fo:block text-align="center" font-size="small">
+                Page
+                <fo:page-number/>
+            </fo:block>
+        </fo:static-content>
+        <fo:static-content flow-name="header">
+            <fo:block text-align="center" font-size="xx-large">
+                Journal du 2016-05-03
+            </fo:block>
+        </fo:static-content>
+        <fo:flow flow-name="body">
+            <fo:block margin-top="20pt">
+                <fo:inline font-size="large" color="green">Présidentielles américaines: la famille Bush ne soutiendra
+                    pas Donald Trump
+                </fo:inline>
+                <fo:inline font-size="small" color="gray">
+                    Par Camille Tang Quynh
+                </fo:inline>
+            </fo:block>
+            <fo:block margin-top="10pt">Les deux anciens présidents du clan Bush ont déclaré qu’ils ne soutiendront pas
+                la candidature de Donald Trump aux prochaines présidentielles américaines, rapportent plusieurs médias
+                américains.
+            </fo:block>
+            <fo:block margin-top="20pt">
+                <fo:inline font-size="large" color="green">Un soutien qui s’essouffle</fo:inline>
+                <fo:inline font-size="small" color="gray">
+                    Par Camille Tang Quynh
+                </fo:inline>
+            </fo:block>
+            <fo:block margin-top="10pt">Alors que le milliardaire américain voit ses adversaires républicains tomber les
+                uns après les autres – John Kasich, son dernier rival des primaires, a jeté l’éponge mercredi – son
+                soutien dans le clan républicain semble lui aussi s’essouffler. Ni George Bush ni son fils, George W.
+                Bush, n’approuvent les attitudes et idéologies du magnat de l’immobilier, qui enchaîne les déclarations
+                chocs à (presque) chacune de ses apparitions publiques.&#13;
+                &#13;
+                ► A lire : Trump est officiellement le seul candidat républicain à la Maison Blanche&#13;
+                &#13;
+                Âgé de 91 ans, George Bush père avait soutenu les candidats républicains à l’investiture lors des cinq
+                dernières présidentielles, mais un de ses porte-paroles a récemment déclaré au Texas Tribune qu’il «
+                s’était retiré de la politique ». De son côté, le fils avait annoncé qu’il ne prévoyait pas de
+                participer ni de commenter la prochaine campagne présidentielle.&#13;
+                &#13;
+                Pour rappel, Jeb Bush, le frère de George W. Bush, avait été durant les primaires républicaines dans le
+                collimateur de Donald Trump. Ce dernier ne manquait pas de le ridiculiser, utilisant même l’expression «
+                faible en énergie » pour le qualifier.
+            </fo:block>
+        </fo:flow>
+    </fo:page-sequence>
+</fo:root>

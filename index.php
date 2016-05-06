@@ -12,6 +12,7 @@
              <h1>Journal Gauthier</h1>
          </div>
 
+         <!-- Bouton redirigeant le client vers la page de création d'un journal -->
          <div class="text-right">
              <a href="create_journal.php" class="btn btn-success btn-lg">Créer un nouveau journal</a>
          </div>
@@ -19,7 +20,7 @@
          <?php
          include "functions.php";
 
-         // Permet de lister tous les journaux enregistrés
+         // Permet de lister tous les journaux enregistrés dans les fichiers xml
          $files = scandir('xml');
 
          echo '<ul class="list-group">';
